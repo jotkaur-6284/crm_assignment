@@ -2,6 +2,8 @@
 
 A full-stack AI-first CRM application for logging Healthcare Professional (HCP) interactions.
 
+https://github.com/jotkaur-6284/crm_assignment/blob/main/ai-crm-frontend/a.PNG
+
 The project includes:
 - a **React + Vite frontend** for both form-based and conversational logging,
 - a **FastAPI backend** with AI extraction and persistent database storage,
