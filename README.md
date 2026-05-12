@@ -1,8 +1,15 @@
 # AI-First CRM Frontend & Backend
 
 A full-stack AI-first CRM application for logging Healthcare Professional (HCP) interactions.
+Images -
+![image](https://github.com/jotkaur-6284/crm_assignment/blob/main/ai-crm-frontend/a.PNG?raw=true)
 
-https://github.com/jotkaur-6284/crm_assignment/blob/main/ai-crm-frontend/a.PNG
+![image](https://github.com/jotkaur-6284/crm_assignment/blob/main/ai-crm-frontend/b.PNG?raw=true)
+
+Data storing in the Neon 
+
+![image](https://github.com/jotkaur-6284/crm_assignment/blob/main/ai-crm-frontend/c.PNG?raw=true)
+
 
 The project includes:
 - a **React + Vite frontend** for both form-based and conversational logging,
