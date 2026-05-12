@@ -17,12 +17,11 @@ Data storing in the Neon
 
 ![image](https://github.com/jotkaur-6284/crm_assignment/blob/main/ai-crm-frontend/c.PNG?raw=true)
 
-
 The project includes:
 - a **React + Vite frontend** for both form-based and conversational logging,
 - a **FastAPI backend** with AI extraction and persistent database storage,
-- a **Groq-powered AI service** plus a fallback parser,
-- a **local SQLite database** by default.
+- a **Groq-powered AI service** (gemma2-9b-it) plus a fallback parser,
+- a **Neon PostgreSQL database** for cloud-persistent storage.
 
 ## Project Structure
 
@@ -65,10 +64,11 @@ ai-crm-frontend/
 
 ### Backend
 - FastAPI REST API
-- AI extraction service using Groq model
-- Local SQLite persistence by default
+- LangGraph StateGraph with parse_node, summarize_node and conditional tool routing
+- AI extraction using Groq gemma2-9b-it model
+- Neon PostgreSQL for persistent cloud storage
 - CORS enabled for frontend communication
-- Fallback extraction when Groq key is missing
+- Fallback regex parser when Groq key is missing
 
 ### LangGraph Agent
 - Uses a LangGraph AI agent to manage HCP interaction workflows
@@ -127,10 +127,11 @@ ai-crm-frontend/
 
 ## Tech Stack
 
-- Frontend: React 18, Vite, Redux Toolkit
+- Frontend: React 18, Vite, Redux Toolkit, Google Inter font
 - Backend: Python 3.8+, FastAPI, SQLAlchemy, Pydantic
-- Database: SQLite (default), optional PostgreSQL/MySQL
-- AI: Groq API
+- Database: Neon PostgreSQL (cloud-hosted)
+- AI Agent: LangGraph StateGraph
+- AI Model: Groq gemma2-9b-it
 
 ## Setup
 
@@ -215,7 +216,7 @@ ai-crm-frontend/
 - Frontend populates the form with extracted values.
 - User edits values if necessary.
 - Frontend sends full interaction to `POST /api/log-interaction`.
-- Backend saves the record to the SQLite database.
+- Backend saves the record to database.
 
 ## API Endpoints
 
@@ -296,12 +297,11 @@ ai-crm-frontend/
 5. **Dual Interface** — Chat auto-fills the form via Redux state; both components share a single `currentInteraction` slice
 
 ## Notes
-
-- Backend and frontend use separate terminals.
-- Backend direct run is currently configured to listen on port `8001`.
-- Frontend sends backend requests to `http://127.0.0.1:8001`.
-- Saved data lives in `backend/dev.db` by default.
-
+- Backend and frontend run in separate terminals.
+- Database is Neon PostgreSQL — no local DB setup needed.
+- Frontend sends requests to backend at configured API URL.
+- Google Inter font applied globally via CDN in index.html.
+  
 ## Troubleshooting
 
 - Backend startup failure: verify `.venv` activation and installed dependencies.
