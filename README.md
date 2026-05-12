@@ -287,6 +287,14 @@ ai-crm-frontend/
 - `extracted_sentiment`
 - `created_at`
 
+## Key Implementation Details
+
+1. **LangGraph Agent** — StateGraph with parse_node, summarize_node, and conditional edges for tool routing (Log, Edit, Summarize, Follow Up, Search HCP Profile)
+2. **AI Model** — Groq gemma2-9b-it for structured JSON extraction from natural language chat input
+3. **Database** — PostgreSQL via SQLAlchemy; update `DATABASE_URL=postgresql://user:pass@localhost:5432/crm_db` in `.env`
+4. **Font** — Google Inter loaded via CDN, applied globally with `* { font-family: 'Inter', sans-serif; }`
+5. **Dual Interface** — Chat auto-fills the form via Redux state; both components share a single `currentInteraction` slice
+
 ## Notes
 
 - Backend and frontend use separate terminals.
