@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+
+# Vite build output
+dist/
+
+# Python virtual environments
+.venv/
+backend/.venv/
+
+# Local environment files
+.env
+backend/.env
+
+# SQLite database files
+*.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
