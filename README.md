@@ -183,7 +183,7 @@ ai-crm-frontend/
 
 1. Open a new terminal at the project root:
    ```bash
-   cd c:\Users\jotka\Downloads\ai-crm-frontend\ai-crm-frontend
+   cd ai-crm-frontend
    ```
 2. Run the Vite dev server:
    ```bash
