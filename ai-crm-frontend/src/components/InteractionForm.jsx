@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { updateField, setInteraction } from '../store/interactionSlice'
 
-const BACKEND_URL = 'http://127.0.0.1:8001'
+const BACKEND_URL = 'https://crm-assignment-or1h.onrender.com'
 
 export default function InteractionForm({ data }) {
   const dispatch = useDispatch()
