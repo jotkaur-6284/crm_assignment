@@ -127,7 +127,7 @@ ai-crm-frontend/
 
 1. Open a terminal in the project root:
    ```bash
-   cd c:\Users\jotka\Downloads\ai-crm-frontend\ai-crm-frontend
+   cd ai-crm-frontend
    ```
 2. Install frontend dependencies:
    ```bash
@@ -138,7 +138,7 @@ ai-crm-frontend/
 
 1. Open a terminal in the backend folder:
    ```bash
-   cd c:\Users\jotka\Downloads\ai-crm-frontend\ai-crm-frontend\backend
+   cd ai-crm-frontend/backend
    ```
 2. Create a Python virtual environment:
    ```bash
