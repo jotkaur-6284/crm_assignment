@@ -1,6 +1,13 @@
 # AI-First CRM Frontend & Backend
 
 A full-stack AI-first CRM application for logging Healthcare Professional (HCP) interactions.
+
+## Working online link of the application -
+
+### https://crm-assignment-self.vercel.app   (frontend+backend working)
+
+### https://crm-assignment-or1h.onrender.com/docs#/     (backend )
+
 Images -
 ![image](https://github.com/jotkaur-6284/crm_assignment/blob/main/ai-crm-frontend/a.PNG?raw=true)
 
